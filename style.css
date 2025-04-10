@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(85, 100, 197);
+    padding: 0;
+    margin: 0;
+    font-size:large;
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    background-color: aliceblue;
+}
+ul{
+    display:flex;
+}
+li{
+    text-align: center;
+    list-style: none;
+    margin: 0 25px;
+    padding-top: 10px;
+}
+a{  
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+main{
+    flex:1;
+    min-width: 100vh;
+    align-items: center;
+    text-align: center;
+}
+.container{
+    background-color: rgb(137, 156, 191);
+    max-width: 30vw;
+    margin:auto;
+    padding: 16px;
+}
+.btn{
+    background-color: black;
+    color:white;
+    padding: 9px 12px;
+}
+.btn:hover{
+    background-color: rgb(25, 111, 82);
+}
+footer{
+    background-color: black;
+    display:flex;
+    color: white;
+    padding: 10px;
+    justify-content:center;
+
+}
+.logo {
+    display: flex; /* Aligns items in a row */
+    align-items: center; /* Vertically centers the items */
+    gap: 10px;
+}
+
+.logo img {
+    width: 45px; /* Adjust the size of the image if needed */
+}
+
+.logo span {
+    font-size: 20px; /* Adjust font size if needed */
+    font-weight: bold; /* Makes the text bold */
+}
+@media only screen and (max-width: 600px){
+    .container{
+        font-size:12px;
+    }
+    input[type='text']{
+        width:100%;
+    }
+    nav{
+        flex-direction:column;
+    }
+}
